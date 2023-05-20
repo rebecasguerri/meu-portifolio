@@ -83,6 +83,25 @@ body.dark {
     background:#170c046c;
     backdrop-filter: blur(1rem);
 }
+.checkbox-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.icons-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+}
+.icons-header img {
+    width: 1.3rem;
+}
+.icons-header a{
+   background-color: var(---background-main);
+}
 
 
 
@@ -315,7 +334,7 @@ footer {
     margin: auto;
     padding: 2rem 0 ;
 }
-.icons-footer{
+.icons{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -324,7 +343,7 @@ footer {
     gap: 1.5rem;
 }
 
-.icons-footer a{
+.icons a{
     cursor: pointer;
     background-color: var(---background-footer);
     padding: 0.5rem;
@@ -334,7 +353,7 @@ footer {
     margin-top: 0.8rem;
    
 }
-.icons-footer a:hover{
+.icons a:hover{
     padding: 0.7rem;
     background-color: var(---btn-apresentation);
     margin-top: -0.8rem;
