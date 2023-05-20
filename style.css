@@ -29,6 +29,32 @@ body{
     margin: 0;
     transition: background 0.2s linear;
 }
+
+
+
+
+
+
+header {
+    position: fixed;
+    left: 0px;
+    top: 0;
+    width: 100vw;
+    background:#e7dfd8a4;
+    backdrop-filter: blur(1rem);
+    z-index: 100;
+}
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    font-family: "agrandir-Narrow";
+    color: #170c04c9;
+    font-size: 0.7rem;
+}
+
 .checkbox-input{
     display: flex;
     align-items: center;
@@ -50,9 +76,12 @@ body{
     box-shadow: 0px 0px 34px #0000005e;
 }
 
-
 body.dark {
     background: var(---font-color);
+}
+.dark header{
+    background:#170c046c;
+    backdrop-filter: blur(1rem);
 }
 
 
@@ -103,21 +132,17 @@ body.dark {
 
 
 
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1rem 4rem;
-    justify-content: space-between;
-    font-family: "agrandir-Narrow";
-    color: #170c04c9;
-    font-size: 0.7rem;
-}
+
+
+
+
+
+
 .apresetation {
     width: 90vw;
     height: 80vh;
     border-radius: 0rem;
-    margin: 2rem auto;
+    margin: 6rem auto;
     text-align: center;
     display: flex;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.076);
@@ -185,7 +210,7 @@ header {
     margin-top:6rem;
 }
 #my-picture {
-    width: 300px;
+    width: 400px;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 14px #00000036;
 }
@@ -199,32 +224,38 @@ header {
     color:#170c04b5;
     font-family:"agrandir-Narrow";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.projects{
-    width: 80vw;
-    margin: auto;
-    height: 100vh;
+#article-about p{
+    font-size: 1.5rem;
 }
-.projects-main{
+
+
+
+
+
+.abilities{
+    width: 90vw;
+    margin: auto;
+    height: 90vh;
+}
+
+
+
+
+
+
+
+
+.projects {
+    width: 90vw;
+    margin: auto;
+    height: auto;
+}
+.projects-main {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    gap: 3rem;
-    
+    gap: 5rem;
+    justify-content: space-between;
 }
 .projetct-content{
     position: relative;
@@ -237,9 +268,9 @@ header {
     color: var(---font-color);
     font-family:"agrandir-Tight";
 }
-.img-project{
-    width:400px;
-    border-radius: 0.5rem 0.5rem 0 0 ;
+.img-project {
+    width: 481px;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 .img-project:hover{
     filter:  blur(3px) sepia(10%) ;
@@ -279,10 +310,10 @@ footer {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.101);
     height: auto;
 }
-.contact-me{
+.contact-me {
     width: 50vw;
     margin: auto;
-    padding: 3.5rem 0 2rem 0rem;
+    padding: 2rem 0 ;
 }
 .icons-footer{
     display: flex;
