@@ -722,7 +722,7 @@ footer {
 }
 @media (max-width:400px){
     .projetct-content {
-        width: 19rem;
+        width: 17rem;
     }
     #my-picture {
         width: 215px;
@@ -736,6 +736,7 @@ footer {
         width: 70vw;
         font-size: 0.8rem;
     }
+
 }
 @media (max-width: 368px){
     .about-content {
@@ -743,6 +744,11 @@ footer {
     }
     #name-header {
         font-size: 1rem;
+    }
+    #my-picture {
+        top: 9rem;
+        width: 215px;
+        left: 5rem;
     }
 }
 @media (max-width: 349px){
