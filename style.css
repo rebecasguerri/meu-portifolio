@@ -98,9 +98,9 @@ header {
 body.dark {
     background: #0D0D0D;
 }
-.dark header{
-    background:#0D0D0D;
-    backdrop-filter: blur(1rem);
+.dark header {
+    background: #0d0d0d3b;
+    backdrop-filter: blur(2rem);
 }
 .dark .line {
     width: 2px;
@@ -126,9 +126,8 @@ body.dark {
     padding-bottom:0;
     padding: -0.1;
 }
-.dark .list-content{
-    fill: #170C04 ;
-    background-color: #170C04;
+.dark .list-content {
+    background-color: transparent;
 }
 .dark .icons a {
     cursor: pointer;
@@ -144,9 +143,7 @@ body.dark {
 .icons-header img {
     width: 1.5rem;
 }
-.icons-header a{
-   background-color: var(---background-main);
-}
+
 .dark #copy{
     color: #A6A6A6;
 }
