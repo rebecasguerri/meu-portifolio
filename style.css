@@ -746,7 +746,23 @@ footer {
     .about-content {
         width: 90vw;
     }
+    .project-description {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    .img-project {
+        width: 270px;
+    }
+    .icon-content,
+    .exerternal-page-icon{
+        width: 1.2rem;
+    }
+    .project-description {
+        width: 18rem;
+    }
+    .projetct-content {
+        width: 17rem;
+    }
+    
 }
-.img-project {
-    width: 270px;
-}
+
