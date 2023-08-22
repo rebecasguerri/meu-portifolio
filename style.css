@@ -489,6 +489,9 @@ footer {
         align-items: center;
         flex-direction: column;
         gap: 1rem;
+        padding: 1rem;
+        box-shadow: 1px 2px 19px #0000002e;
+        border-radius: 1rem;
     }
     .line {
         display: none;
@@ -498,10 +501,17 @@ footer {
     }
     .rigth {
         display: flex;
-        justify-content: left;
+        justify-content: center;
     }
     .rigth-side{
         text-align: left;
+    }
+    .project-description {
+        text-align: center;
+    }
+    .icons-content {
+        justify-content: center;
+
     }
 }
 
