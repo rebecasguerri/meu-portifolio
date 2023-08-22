@@ -741,6 +741,9 @@ footer {
     .about-content {
         width: 86vw;
     }
+    #name-header {
+        font-size: 1rem;
+    }
 }
 @media (max-width: 349px){
     .about-content {
@@ -761,7 +764,7 @@ footer {
         width: 18rem;
     }
     .projetct-content {
-        width: 17rem;
+        width: 18rem;
     }
     
 }
