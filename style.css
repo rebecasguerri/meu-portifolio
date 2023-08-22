@@ -717,13 +717,10 @@ footer {
         border-radius: 0.5rem;
     }
     .projetct-content {
-        width: 22rem;
+        width: 19rem;
     }
 }
 @media (max-width:400px){
-    .projetct-content {
-        width: 17rem;
-    }
     #my-picture {
         width: 215px;
     }
@@ -773,5 +770,10 @@ footer {
         width: 18rem;
     }
     
+}
+@media (max-width:320px){
+    .projetct-content {
+        width: 19rem;
+    }
 }
 
