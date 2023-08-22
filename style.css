@@ -153,8 +153,9 @@ body.dark {
 .dark footer {
     background: #0D0D0D;
 }
-
-
+.dark .exerternal-page-icon{
+    fill: #592316;
+}
 
 
 
@@ -330,6 +331,11 @@ body.dark {
     justify-content: center;
     margin: 4rem 0 4rem 0 ;
 }
+.projects-article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .line {
     width: 2px;
     background-color: var(---spam-color);
@@ -354,7 +360,10 @@ body.dark {
     border-radius: 0.5rem ;
 }
 .icons-content {
-    width: 29rem;
+    width: 28rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 .rigth {
     display: flex;
