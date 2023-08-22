@@ -266,7 +266,7 @@ body.dark {
 
 
 .projects {
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     height: auto;
 }
@@ -274,8 +274,9 @@ body.dark {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 5rem;
+    gap: 10rem;
     justify-content: center;
+    margin-top: 4rem;
 }
 .line {
     width: 2px;
