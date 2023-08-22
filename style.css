@@ -276,7 +276,7 @@ body.dark {
     align-items: center;
     gap: 10rem;
     justify-content: center;
-    margin-top: 4rem;
+    margin: 4rem 0 4rem 0 ;
 }
 .line {
     width: 2px;
@@ -335,6 +335,7 @@ footer {
     background-color: var(---background-footer);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.101);
     height: auto;
+    margin-top: 6rem;
 }
 .contact-me {
     width: 50vw;
