@@ -6,6 +6,7 @@
     font-family:"agrandir-Tight";
     src: url("font/Agrandir-Tight.otf");
 }
+
 @font-face {
     font-family:"agrandir-Narrow";
     src: url("font/Agrandir-Narrow.otf");
@@ -255,8 +256,24 @@ body.dark {
 }
 
 
+.typewriter{
+    color: var(---font-color);
+}
+.titulo-principal:after{
+ content: '|';
+ margin-left: 5px;
+ opacity: 1;
+ animation: typewriterEfect .7s infinite;
+}
 
-
+@keyframes typewriterEfect{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
 
 
 
@@ -363,8 +380,6 @@ body.dark {
     margin-left: 0.8rem;
     margin-top: 1rem;
 }
-
-
 
 
 
