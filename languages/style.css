@@ -382,9 +382,24 @@ body.dark {
 }
 
 
+.knowledge{ 
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 6rem;
+}
 
-
-
+.content-boxes-knowledge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+.content-box-only{
+    background-color: beige;
+}
 
 
 
