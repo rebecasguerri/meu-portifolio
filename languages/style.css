@@ -382,9 +382,9 @@ body.dark {
 }
 
 
+
 .knowledge{ 
     width: 90vw;
-    height: 80vh;
     margin: auto;
     margin-top: 6rem;
 }
@@ -392,18 +392,50 @@ body.dark {
 .content-boxes-knowledge {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 3rem;
     margin-top: 4rem;
+    font-family: "agrandir-regular";
 }
 .content-box-only{
-    background-color: beige;
+    background-color: var(---background-main);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.076);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 20rem;
 }
 
 
+.icon-languages {
+    height: 3rem;
+    width: 3rem;
+    fill: var(---spam-color);
+}
+
+.last-icon{
+    fill: var(---spam-color);
+    padding-top: 0.5rem;
+    
+}
 
 
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    fill: var(---spam-color);
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
 
 
 
