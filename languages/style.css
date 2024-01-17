@@ -15,6 +15,10 @@
     font-family:"agrandir-regular";
     src: url("font/Agrandir-Regular.otf");
 }
+@font-face {
+    font-family: "robotic";
+    src: url("font/RobotoMono-VariableFont_wght.ttf");
+}
 :root{
     ---background-main:#E7DFD8;
     ---btn-apresentation:#e6d5ce;
@@ -63,6 +67,10 @@ header {
 .icon-content{
     fill: #170C04;
 }
+#name-header{
+    font-family: 'robotic';
+}
+
 
 /* DARK MODE*/
 
@@ -215,14 +223,17 @@ body.dark {
 .apresetation {
     width: 90vw;
     height: 80vh;
-    border-radius: 0rem;
     margin: 6rem auto;
     text-align: center;
     display: flex;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.076);
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 50px;
+    background: var(---background-main);
+    background: linear-gradient(145deg, #f7efe7, #d0c9c2);
+    box-shadow:  20px 20px 60px #c4beb8,
+                 -20px -20px 60px #fffff8;
 }
 #p-apresentation{
     font-family:"agrandir-Tight";
