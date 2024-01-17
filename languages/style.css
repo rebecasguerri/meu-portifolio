@@ -34,10 +34,32 @@ body{
     transition: background 0.2s linear;
 }
 
+/*scroll bar */
 
+body {
+    --sb-track-color: #fdf5e6;
+    --sb-thumb-color: #e8b298;
+    --sb-size: 10px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+}
 
-
-
+/*Header*/
 
 header {
     position: fixed;
@@ -69,6 +91,7 @@ header {
 }
 #name-header{
     font-family: 'robotic';
+    color: var(---font-color);
 }
 
 
