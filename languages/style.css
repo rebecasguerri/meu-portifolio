@@ -68,6 +68,7 @@ header {
     background:#e7dfd8a4;
     backdrop-filter: blur(1rem);
     z-index: 100;
+    border-radius: 0 0 11.5rem 11.5rem;
 }
 .header-content {
     display: flex;
@@ -80,18 +81,7 @@ header {
     font-size: 0.7rem;
 }
 
-.checkbox-input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.icon-content{
-    fill: #170C04;
-}
-#name-header{
-    font-family: 'robotic';
-    color: #170c04b5;
-}
+
 
 
 /* DARK MODE*/
@@ -101,12 +91,12 @@ header {
 .dark #title-apresentation,
 .dark #subtitle-apresentation,
 .dark #article-about{
-    color: #A6A6A6;
+    color: #E0C097;
 }
 .dark .my-port,
 .dark #name-header {
     font-family: "agrandir-Tight";
-    color: #592316;
+    color: #7D1935;
 }
 .dark .btn-apresentation{
     background-color: #592316;
@@ -114,28 +104,35 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
 }
 .dark .apresetation {
-    box-shadow: 0px 0px 34px #0000005e;
+    border-radius: 50px;
+    background: #420516;
+    box-shadow:  20px 20px 60px #380413,
+                 -20px -20px 60px #4c0619;
+    background: #420516;
 }
 .dark #p-apresentation {
     font-family: "agrandir-Tight";
-    color: #592316;
+    color: #7D1935;
 }
 .dark .project-description {
     padding: 0.5rem;
-    color: #A6A6A6;
+    color: #E0C097;
     font-family: "agrandir-Tight";
     width: 24vw;
 }
 body.dark {
-    background: #0D0D0D;
+    background: #420516;
 }
 .dark header {
-    background: #0d0d0d3b;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(50%);
+    background: #4c06195c;
+    background: #420516;
+    box-shadow: 0px 10px 30px #380413;
+    background: #4205163d;
 }
 .dark .line {
     width: 2px;
-    background-color:#592316;
+    background-color:#7D1935;
     height: 15rem;
 }
 .checkbox-icons {
@@ -153,49 +150,195 @@ body.dark {
     padding-top: 0.5rem;
 }
 .dark .icon-content{
-    fill: #592316;
+    fill: #7D1935;
     padding-bottom:0;
     padding: -0.1;
 }
 .dark .list-content {
     background-color: transparent;
 }
-.dark .icons a {
-    cursor: pointer;
-    background-color: #592316;
-    border: 1px solid #592316;
-}
-.dark .icons a:hover{
-    padding: 0.7rem;
-    background-color: #501e11 ;
-    margin-top: -0.8rem;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.172);
-}
-.icons-header img {
-    width: 1.5rem;
-}
+
 
 .dark #copy{
-    color: #A6A6A6;
+    color: #E0C097
 }
 .dark #copy a {
     color: #592316;
 }
 .dark footer {
-    background: #0D0D0D;
+    background: #290001;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 86%);
 }
 .dark .exerternal-page-icon{
     fill: #592316;
 }
+.dark  .github .BG{
+    background: #7D1935;
+}
+.dark  .whatsapp .BG{
+    background: #7D1935;
+}
+.dark  .linkdin .BG{
+    background: #7D1935;
+}
+.dark .svg-fill-black{
+    fill:#E0C097;
+}
+.dark .label{
+    background-color: #7D1935;
+}
+.dark .content-box-only{
+    border-radius: 2rem;
+    background: #420516;
+    box-shadow:  20px 20px 60px #380413,
+                 -20px -20px 60px #4c0619;
+    background: #420516;
+    p{
+        color: #E0C097;
+    }
+}
 
 
+
+
+
+
+
+
+
+
+
+
+/*icons apresentation*/
+
+.social-card {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 1.4rem;
+}
+.Btn {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0rem);
+    letter-spacing: 0.8rem;
+    border-radius: 100%;
+    transition: all 0.3s;
+    border: 0rem solid rgba(156, 156, 156, 0.466);
+    z-index: 2;
+  }
+  
+  .BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: 1;
+    border-radius: 100%;
+    pointer-events: none;
+    transition: all 0.3s;
+    font-size: 0;
+  }
+  .github .BG {
+    background: var(---btn-apresentation);
+  }
+  .linkdin .BG {
+    background: var(---btn-apresentation);
+  }
+  .whatsapp .BG {
+    background: var(---btn-apresentation);
+  }
+  .Btn:hover .BG {
+    transform: scale(1.5);
+    /* transform-origin: bottom; */
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .Btn:hover .svgContainer {
+    border: 1px solid rgba(216, 216, 216, 0.466);
+    background-color: rgba(209, 209, 209, 0.466);
+    backdrop-filter: blur(4px);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
 
 .checkbox {
     opacity: 0;
     position: absolute;
 }
 .label {
-    background-color: #0D0D0D;
+    background-color: white;
     border-radius: 57px;
     cursor: pointer;
     display: flex;
@@ -402,7 +545,7 @@ body.dark {
     width: 28rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
 }
 .rigth {
     display: flex;
@@ -412,6 +555,10 @@ body.dark {
     width: 33px;
     margin-left: 0.8rem;
     margin-top: 1rem;
+}
+.white{
+    fill:rgba(23, 12, 4, 0.71);
+    
 }
 
 
@@ -432,16 +579,13 @@ body.dark {
     font-family: "agrandir-regular";
 }
 .content-box-only {
-    background-color: var(---background-main);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.076);
-    border-radius: 0.5rem;
+    border-radius: 50px;
     padding: 1rem;
     width: 17rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    cursor: pointer;
     font-size: 0.9rem;
 }
 
@@ -454,7 +598,6 @@ body.dark {
 .last-icon{
     fill: var(---spam-color);
     padding-top: 0.5rem;
-    display: none;
     
 }
 
@@ -492,25 +635,9 @@ footer {
     gap: 1.5rem;
 }
 
-.icons a{
-    cursor: pointer;
-    background-color: var(---background-footer);
-    padding: 0.5rem;
-    border: 1px solid var(---btn-apresentation);
-    border-radius: 0.5rem;
-    transition-duration: 0.1s;
-    margin-top: 0.8rem;
-   
-}
-.icons a:hover{
-    padding: 0.7rem;
-    background-color: var(---btn-apresentation);
-    margin-top: -0.8rem;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.172);
-}
 #copy{
     text-align: center;
-    font-family:"agrandir-Tight";
+   font-family: "robotic";
     font-size: 0.8rem;
     line-height: 1.3rem;
     color:#170c0497 ;
