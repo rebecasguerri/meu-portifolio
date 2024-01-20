@@ -34,6 +34,15 @@ body{
     transition: background 0.2s linear;
 }
 
+
+
+          
+
+
+
+
+
+
 /*scroll bar */
 
 body {
@@ -86,6 +95,9 @@ header {
 
 /* DARK MODE*/
 
+
+
+
 .dark h1,
 .dark h2,
 .dark #title-apresentation,
@@ -122,6 +134,11 @@ header {
 }
 body.dark {
     background: #420516;
+    --sb-track-color: #290001;
+    --sb-thumb-color: #7D1935;
+    --sb-size: 10px; 
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
 }
 .dark header {
     backdrop-filter: blur(50%);
@@ -167,7 +184,7 @@ body.dark {
 }
 .dark footer {
     background: #290001;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 86%);
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 50%);
 }
 .dark .exerternal-page-icon{
     fill: #592316;
@@ -184,18 +201,15 @@ body.dark {
 .dark .svg-fill-black{
     fill:#E0C097;
 }
-.dark .label{
-    background-color: #7D1935;
+.dark .label {
+    background: #5b0d23;
+    box-shadow: 6px 1px 10px #00000040, -2px -2px 10px #631e316b;
 }
-.dark .content-box-only{
-    border-radius: 2rem;
+
+.dark .projetct-content{
     background: #420516;
-    box-shadow:  20px 20px 60px #380413,
-                 -20px -20px 60px #4c0619;
+    box-shadow: 20px 20px 60px #380413, -20px -20px 60px #4c0619;
     background: #420516;
-    p{
-        color: #E0C097;
-    }
 }
 
 
@@ -261,19 +275,19 @@ body.dark {
     font-size: 0;
   }
   .github .BG {
-    background: var(---btn-apresentation);
+    background: var(---spam-color);
   }
   .linkdin .BG {
-    background: var(---btn-apresentation);
+    background: var(---spam-color);
   }
   .whatsapp .BG {
-    background: var(---btn-apresentation);
+    background: var(---spam-color);
   }
   .Btn:hover .BG {
     transform: scale(1.5);
     /* transform-origin: bottom; */
     font-size: 2rem;
-    color: white;
+    color: #E8B298;
   }
   
   .Btn:hover .svgContainer {
@@ -349,6 +363,8 @@ body.dark {
     height: 22px;
     width: 37px;
     transform: scale(1.5);
+    background: linear-gradient(145deg, #f7efe7, #d0c9c2);
+    box-shadow: 2px 2px 10px #c4beb8, -2px -2px 10px #fffff8;
 }
 .label .ball {
     background-color: var(---background-main);
@@ -360,6 +376,7 @@ body.dark {
     width: 18px;
     transform: translateX(0px);
     transition: transform 0.2s linear;
+    box-shadow: 0px 0px 6px #0000005e;
 }
 .checkbox:checked + .label .ball {
     transform: translateX(24px);
@@ -471,7 +488,6 @@ body.dark {
 }
 .about-me {
     width: 80vw;
-    height: 80vh;
     margin: auto;
     margin-top:6rem;
 }
@@ -499,9 +515,34 @@ body.dark {
 
 
 
+
+.devicon{
+   fill:#170C04 ;
+   display: flex;
+   width: 4rem;
+   height: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .projects {
     width: 80vw;
-    margin: auto;
+    margin: 4rem auto;
     height: auto;
 }
 .projects-main {
@@ -511,6 +552,9 @@ body.dark {
     gap: 10rem;
     justify-content: center;
     margin: 5rem 0 4rem 0;
+}
+.btn-projects{
+
 }
 .projects-article {
     display: flex;
@@ -529,6 +573,10 @@ body.dark {
     display: flex;
     align-items: center;
     gap: 3rem;
+    background: linear-gradient(145deg, #f7efe7, #d0c9c2);
+    box-shadow: 20px 20px 60px #c4beb8, -20px -20px 60px #fffff8;
+    padding: 2rem;
+    border-radius: 2rem;
 }
 .project-description {
     padding: 0.5rem;
@@ -556,9 +604,9 @@ body.dark {
     margin-left: 0.8rem;
     margin-top: 1rem;
 }
-.white{
-    fill:rgba(23, 12, 4, 0.71);
-    
+.white {
+    fill: rgb(24 13 4 / 71%);
+    padding: 0.2rem;
 }
 
 
@@ -579,14 +627,7 @@ body.dark {
     font-family: "agrandir-regular";
 }
 .content-box-only {
-    border-radius: 50px;
-    padding: 1rem;
-    width: 17rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 0.9rem;
+  
 }
 
 .icon-languages {
@@ -669,7 +710,7 @@ footer {
     }
     .projects {
         width: 90vw;
-        margin: auto;
+        margin: 4rem auto;
         height: auto;
     }
 }
