@@ -212,10 +212,21 @@ body.dark {
     background: #420516;
 }
 
+.dark .content-boxes-knowledge{
+    background-color: #290001;
+}
 
-
-
-
+.dark .content-box-only{
+    background: #420516;
+    box-shadow: 20px 20px 60px #380413, -20px -20px 60px #4c0619;
+    background: #420516;
+}
+.dark .fill{
+    fill: #E0C097;
+}
+.dark .p-languages{
+    color: #E0C097;
+}
 
 
 
