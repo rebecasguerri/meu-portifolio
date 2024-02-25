@@ -762,6 +762,9 @@ footer {
         border-radius: 0.5rem;
         box-shadow: 0px 0px 14px #00000036;
     }
+    .content-box-only{
+        padding: 1rem;
+    }
 }
 
 @media(max-width:988px){
@@ -851,6 +854,9 @@ footer {
         font-size: 1rem;
         width: 26rem;
         position: relative;
+    }
+    .social-card{
+        display: none;
     }
     #my-picture {
         top: 9rem;
